@@ -229,3 +229,28 @@ No problems yet.
 - **Python** (`solution.py`) — primary language, 88 solutions
 - **C++** (`solution.cpp`) — 30 solutions (many problems have both Python and C++)
 - **JavaScript** (`solution.js`) — 1 solution
+
+---
+
+## Monthly Sync
+
+This repo updates automatically via `sync_solutions.py`. To run locally:
+
+```bash
+python sync_solutions.py --cookie "<YOUR_LEETCODE_SESSION_COOKIE>"
+```
+
+**What it does:**
+- Exports fresh solutions from LeetCode
+- Keeps best solution per language (lowest runtime)
+- Reorganizes by NeetCode 150 categories
+- Commits and pushes to GitHub
+
+**How to get your cookie:**
+1. Log in to LeetCode
+2. Open DevTools (F12) → Application → Cookies
+3. Find `LEETCODE_SESSION` cookie
+4. Copy the value
+5. Run the script with `--cookie "<value>"`
+
+Run monthly to keep solutions updated with new problems you solve.
